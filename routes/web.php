@@ -32,6 +32,7 @@ Route::resource('/spa', App\Http\Controllers\Nandini\SpaController::class);
 Route::resource('/weddings', App\Http\Controllers\Nandini\WeddingController::class);
 Route::resource('/gallery', App\Http\Controllers\Nandini\GalleryController::class);
 Route::resource('/contact-us', App\Http\Controllers\Nandini\ContactUsController::class);
+Route::resource('/awards', App\Http\Controllers\Nandini\AwardController::class);
 
 require __DIR__ . '/auth.php';
 

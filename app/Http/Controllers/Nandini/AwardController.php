@@ -14,7 +14,7 @@ class AwardController extends Controller
      */
     public function index()
     {
-        //
+        return view('nandini.award');
     }
 
     /**
