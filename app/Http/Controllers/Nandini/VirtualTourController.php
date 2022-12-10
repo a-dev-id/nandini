@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Pjv;
+namespace App\Http\Controllers\Nandini;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class WeddingController extends Controller
+class VirtualTourController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class WeddingController extends Controller
      */
     public function index()
     {
-        return view('pjv.wedding');
+        //
     }
 
     /**

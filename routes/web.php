@@ -32,7 +32,13 @@ Route::resource('/spa', App\Http\Controllers\Nandini\SpaController::class);
 Route::resource('/weddings', App\Http\Controllers\Nandini\WeddingController::class);
 Route::resource('/gallery', App\Http\Controllers\Nandini\GalleryController::class);
 Route::resource('/contact-us', App\Http\Controllers\Nandini\ContactUsController::class);
+Route::resource('/story', App\Http\Controllers\Nandini\StoryController::class);
 Route::resource('/awards', App\Http\Controllers\Nandini\AwardController::class);
+Route::resource('/videos', App\Http\Controllers\Nandini\VideoController::class);
+Route::resource('/day-guest', App\Http\Controllers\Nandini\DayGuestController::class);
+Route::resource('/blog', App\Http\Controllers\Nandini\BlogController::class);
+Route::resource('/careers', App\Http\Controllers\Nandini\CareerController::class);
+Route::resource('/virtual-tour', App\Http\Controllers\Nandini\VirtualTourController::class);
 
 require __DIR__ . '/auth.php';
 

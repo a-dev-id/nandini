@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Pjv;
+namespace App\Http\Controllers\Nandini;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class EventController extends Controller
+class DayGuestController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        return view('pjv.event');
+        //
     }
 
     /**
