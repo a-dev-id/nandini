@@ -29,6 +29,15 @@
                 // "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
             }).buttons().container().appendTo('#list_wrapper .col-md-6:eq(0)');
         });
+
+        $(function() {
+        $("#feature").DataTable({
+        "responsive": true,
+        "lengthChange": false,
+        "autoWidth": false,
+        // "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+        }).buttons().container().appendTo('#list_wrapper .col-md-6:eq(0)');
+        });
 </script>
 <script src="{{ asset('js/tinymce/tinymce.min.js') }}" referrerpolicy="origin"></script>
 <script>
@@ -275,7 +284,7 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <table id="list" class="table table-bordered table-striped">
+                            <table id="feature" class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
                                         <th>Title</th>

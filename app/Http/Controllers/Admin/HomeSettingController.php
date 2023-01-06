@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\HomeSetting;
 use App\Models\HomeSlider;
 use App\Models\HomeSlider2;
+use App\Models\HomeTextSlider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
@@ -18,10 +19,11 @@ class HomeSettingController extends Controller
      */
     public function index()
     {
+        $text_sliders = HomeTextSlider::all();
         $sliders = HomeSlider::all();
         $sliders2 = HomeSlider2::all();
         $setting = HomeSetting::find(1);
-        return view('admin.home.index')->with(compact('setting', 'sliders', 'sliders2'));
+        return view('admin.home.index')->with(compact('setting', 'sliders', 'sliders2', 'text_sliders'));
     }
 
     /**
